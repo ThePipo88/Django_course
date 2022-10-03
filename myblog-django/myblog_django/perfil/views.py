@@ -15,4 +15,4 @@ def profile(request):
     #p3.save()
     
     projects = Project.objects.all()
-    return HttpResponse(projects)
+    return render(request,'profile.html')
